@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Bootstrap 4 Testimonial Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap');
+body {
+    font-family: 'Mulish', sans-serif;
+    background: #673AB7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#customers-testimonials .item {
+	text-align: center;
+      margin-bottom: 50px;
+      padding: 15px;
+      opacity: .2;
+      -webkit-transform: scale3d(0.8, 0.8, 1);
+      transform: scale3d(0.8, 0.8, 1);
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: #FFF;
+      border-radius: 3px;
+
+    }
+
+
+#customers-testimonials .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+    background-color: #FFF;
+	
+}
+.owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+    max-width: 90px;
+    margin: 0 auto 17px;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span, #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+    background: #fff;
+    transform: translate3d(0px, -50%, 0px) scale(0.6);
+}
+#customers-testimonials.owl-carousel .owl-dots {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+    outline: none;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+    background: rgba(255,255,255,0.4);
+    display: inline-block;
+    height: 20px;
+    margin: 0 2px 5px;
+    transform: translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width: 20px;
+    border-radius: 100%;
+}
+.commo img {
+    width: 30px !important;
+    height: auto;
+    float: left;
+}
+.author-img img {
+    width: 60px !important;
+    height: auto;
+    border-radius: 100%;
+    margin-bottom: 0 !important;
+}
+</style>
+  </head>
+  <body>
+ 
+<!-- TESTIMONIALS -->
+ 
+<div class="container">
+    <div class="row">
+    <div class="col-sm-12">
+        <div class="container-fluid px-3 px-sm-5 my-5 text-center">
+        
+      </div>
+        <div id="customers-testimonials" class="owl-carousel"> 
+        
+        <!--TESTIMONIAL 1 -->
+        <div class="item shadow-lg">
+            <div class="p-4 bg-white rounded"> <img src="https://annedece.sirv.com/img/earth.png" alt="">
+            <div class="commo pt-3"><img src="https://annedece.sirv.com/img/commo6.png"></div>
+            <p class="mb-4 text-muted">Working with SKMC has been a game-changer for our business. Their strategic insights and expert guidance have helped us streamline our operations and achieve remarkable growth. Highly recommended!"</p>
+            <hr>
+            <div class="d-flex align-items-center">
+                <div class="author-img mr-3"> <img src="img/Ellipse 4.png"> </div>
+                <div>
+                <h6 class="m-0 float-left font-weight-bold text-warning">John Smith</h6>
+                <p class="m-0 small font-medium text-muted">CEO</p>
+              </div>
+              </div>
+          </div>
+          </div>
+        <!--END OF TESTIMONIAL 1 --> 
+        <!--TESTIMONIAL 2 -->
+        <div class="item shadow-lg">
+            <div class="p-4 bg-white rounded"> <img src="https://annedece.sirv.com/img/cod-lab.png" alt="">
+            <div class="commo pt-3"><img src="https://annedece.sirv.com/img/commo6.png"></div>
+            <p class="mb-4 text-muted">We were facing complex challenges in our organization, and SKMC provided us with innovative solutions that exceeded our expectations. Their dedicated team truly understands our needs and delivers results.</p>
+            <hr>
+            <div class="d-flex align-items-center">
+                <div class="author-img mr-3"> <img src="img/Ellipse 4.png"> </div>
+                <div>
+                <h6 class="m-0 float-left font-weight-bold text-warning">Jane Doe</h6>
+                <p class="m-0 small font-medium text-muted">CEO</p>
+              </div>
+              </div>
+          </div>
+          </div>
+        <!--END OF TESTIMONIAL 2 --> 
+        <!--TESTIMONIAL 3 -->
+        <div class="item shadow-lg">
+            <div class="p-4 bg-white rounded"> <img src="https://annedece.sirv.com/img/tvit.png" alt="">
+            <div class="commo pt-3"><img src="https://annedece.sirv.com/img/commo6.png"></div>
+            <p class="mb-4 text-muted">From the initial consultation to the implementation of their strategies, [Your Company Name] demonstrated a deep understanding of our industry and a commitment to our success. Their personalized approach made all the difference</p>
+            <hr>
+            <div class="d-flex align-items-center">
+                <div class="author-img mr-3"> <img src="img/Ellipse 4.png"> </div>
+                <div>
+                <h6 class="m-0 float-left font-weight-bold text-warning">Brian Buie</h6>
+                <p class="m-0 small font-medium text-muted">Web Developer</p>
+              </div>
+              </div>
+          </div>
+          </div>
+        <!--END OF TESTIMONIAL 3 --> 
+        <!--TESTIMONIAL 4 -->
+        <div class="item shadow-lg">
+            <div class="p-4 bg-white rounded"> <img src="https://annedece.sirv.com/img/lighting.png" alt="">
+            <div class="commo pt-3"><img src="https://annedece.sirv.com/img/commo6.png"></div>
+            <p class="mb-4 text-muted">Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+            <hr>
+            <div class="d-flex align-items-center">
+                <div class="author-img mr-3"> <img src="https://annedece.sirv.com/img/pexels-tim-savage-736716.jpg"> </div>
+                <div>
+                <h6 class="m-0 float-left font-weight-bold text-warning">Jeanna Mendoza</h6>
+                <p class="m-0 small font-medium text-muted">Web Developer</p>
+              </div>
+              </div>
+          </div>
+          </div>
+        <!--END OF TESTIMONIAL 4 --> 
+        
+      </div>
+      </div>
+  </div>
+  </div>
+ 
+<!-- END OF TESTIMONIALS --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+<script>
+  jQuery(document).ready(function($) {
+    "use strict";
+    //  TESTIMONIALS CAROUSEL HOOK
+    $('#customers-testimonials').owlCarousel({
+      loop: true,
+      center: true,
+      margin: -38,
+      dots: true,
+      autoplayTimeout: 5000,
+      smartSpeed: 450,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1170: {
+          items: 3
+        }
+      }
+    });
+  });
+  </script>
+</body>
+</html>
